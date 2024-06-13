@@ -35,7 +35,15 @@ cd json-data-converter-api
 pnpm install
 ```
 
-3. Run the development server:
+3. Set up the environment variables:
+- Create a `.env` file in the root of your project.
+- Add the following environment variable to the `.env` file:
+```
+GEMINI_API_KEY=your-gemini-api-key
+```
+> Replace *your-gemini-api-key* with your actual Gemini API key.
+
+4. Run the development server:
 ```bash
 pnpm run dev
 ```
