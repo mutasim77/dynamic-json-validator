@@ -1,8 +1,17 @@
 # Dynamic JSON Validator ⚡
 
-🎉 Welcome to the Dynamic JSON Validator! 🎉
+🎉 Welcome to the Dynamic JSON Validator API! This project provides a robust solution for converting unstructured data into structured JSON format based on a given schema. It leverages advanced AI models to ensure accurate and efficient data transformation.
 
-Easily convert unstructured data into dynamic JSON formats with validation. This project leverages Gemini's API and Zod for schema validation.
+## Table of Contents
+- [Introduction 📜](#introduction-)
+- [Features 🍟](#features-)
+- [Installation 🫎](#installation-)
+- [Usage 🐥](#usage-)
+- [Example 🪄](#example-)
+- [Technologies Used 🦄](#technologies-used-)
+- [Contributing](#contributing-)
+- [License](#license-)
+- [Contact](#contact-)
 
 ## Introduction 📜
 The Dynamic JSON Validator helps you convert unstructured data into a predefined JSON format, validating it dynamically. With retry mechanisms and schema validation, it's robust and reliable.
@@ -31,7 +40,7 @@ pnpm install
 pnpm run dev
 ```
 
-## Usage 🤩
+## Usage 🐥
 Send a `POST` request with your data and schema to the `/validate` endpoint.
 
 Request Body: 
@@ -65,18 +74,6 @@ Request Body:
   ]
 }
 ```
-
-## API Endpoints 🐝
-
-### POST /validate
-Converts and validates unstructured data into a JSON format based on the provided schema.
-
-**Request Body:**
-- `data`: Unstructured data to be converted.
-- `format`: JSON schema to validate against.
-
-**Response:**
-- Returns _validated_ JSON data.
 
 ## Example 🪄
 Here's how you can use `curl` to make a POST request to the API:
@@ -115,3 +112,18 @@ curl -X POST \
 - **TypeScript:** To add static type definitions.
 - **Zod:** For schema validation.
 - **Gemini AI:** For data conversion and processing.
+
+## Contributing 🐛
+Contributions are Welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a Pull Request.
+
+## License 💳
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
+
+## Contact 🩶
+For any questions or suggestions, feel free to open an issue or just [contact me](https://www.mutasim.top/contact)
