@@ -12,7 +12,7 @@ function getSchemaType(schema: any): string {
     return schema.type;
 }
 
-export default function convertJsonSchemaToZod(schema: any): ZodTypeAny {
+export function convertJsonSchemaToZod(schema: any): ZodTypeAny {
     if (typeof schema !== 'object' || schema == null) {
         throw new Error('Invalid schema: must be a non-null object.');
     }
