@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,9 +9,14 @@ export default function Home() {
           <h1 className="text-6xl font-bold mb-4 text-black">Convert Any Data to JSON ⚡</h1>
           <p className="text-xl">Effortlessly convert and validate unstructured data into dynamic JSON formats with this powerful tool.</p>
         </div>
-        <div className="container mx-auto text-center mt-10">
-          <div className="border-4 border-dashed border-gray-600 p-1 rounded-lg inline-block">
-            <Image src="/hero-image.png" alt="Code Screenshot" className="max-w-full rounded-lg h-auto" width={1000} height={1000} />
+        <div className="container flex flex-col items-center mx-auto gap-5 text-center mt-10">
+          <div>
+            <h2 className="text-3xl font-bold">Example:</h2>
+            <Image src="/input.png" alt="Code Screenshot" className="border-4 border-dashed border-gray-600 p-1 rounded-lg h-auto" width={700} height={340} />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold">Response:</h2>
+            <Image src="/output.png" alt="Code Screenshot" className="border-4 border-dashed border-gray-600 p-1 rounded-lg h-auto" width={600} height={340} />
           </div>
         </div>
       </section>
@@ -20,7 +26,7 @@ export default function Home() {
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">What is Dynamic JSON Validator? 🤓</h2>
             <p className="text-lg mb-4">
-              Dynamic JSON Validator is a tool designed to simplify the process of converting unstructured data into JSON formats. Using OpenAI&apos;s API and Zod for schema validation, our tool ensures that your data is accurately structured and validated.
+              Dynamic JSON Validator is a tool designed to simplify the process of converting unstructured data into JSON formats. Using Gemini&apos;s API and Zod for schema validation, this tool ensures that your data is accurately structured and validated.
             </p>
           </div>
         </div>
@@ -38,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Get Started</h2>
           <p className="text-lg">
-            Ready to streamline your data conversion process? <a href="https://github.com/mutasim77/dynamic-json-validator" className="text-blue-600 underline">Visit our GitHub repository</a> to get started.
+            Ready to streamline your data conversion process? <Link href="https://github.com/mutasim77/dynamic-json-validator?tab=readme-ov-file#usage-" className="text-blue-600 underline">Visit GitHub repository</Link> to get started.
           </p>
         </div>
       </section>
